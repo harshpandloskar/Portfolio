@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Creating two columns next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #ebe9e9;
+  padding: 20px;
+}
+
+/* Main column/right column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.box {
+  background-color: #585c5b41;
+  width: 97%;
+  padding: 20px;
+}
+.box > img {
+  width: 100%;
+  height: 460px;
+  border-style: solid;
+  border-color:  #585c5b41;
+}
+
+.myImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.myImage > img {
+    height: 300px;
+}
+
+.footer {
+	padding : 1px;
+    text-align: center;
+    background-color: #333; 
+}
+.footer > h4 {
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the 
+two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
