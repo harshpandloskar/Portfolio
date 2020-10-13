@@ -53,32 +53,41 @@ body {
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color: #f1f1f1;
-  padding: 10px;
+  background-color: #ebe9e9;
+  padding: 20px;
 }
 
 /* Main column */
 .main {
   flex: 70%;
   background-color: white;
-  padding: 10px 0 0 20px;
+  padding: 20px;
 }
 
-/* Fake image, just for this example */
 .box {
-  background-color: #1abc9c9f;
-  width: 100%;
+  background-color: #585c5b41;
+  width: 97%;
   padding: 20px;
-  height:200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.box > img {
+    width: 860px;
+    height: 460px;
+    border-style: solid;
+    border-color:  #585c5b41;
+  }
 .myImage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   }
-img {
+  .myImage > img {
     height: 300px;
+
   }
 
 /* Footer */
@@ -115,36 +124,56 @@ img {
   <p>A Passionate <b>Front End Developer's</b> Portfolio</p>
 </div>
 
-
-
 <!-- The flexible grid (content) -->
 <div class="row">
   <div class="side">
   <div class="myImage">
     <h2>About Me</h2>
-    <img src="https://res.cloudinary.com/harsh-pandloskar/image/upload/v1602539307/Hrash_Pandloskar_teboub.jpg" alt="Not found" width="300" height="220"></img>
+    <img 
+       src="https://res.cloudinary.com/harsh-pandloskar/image/upload/v1602539307/Hrash_Pandloskar_teboub.jpg"
+       alt="Not found" width="300" height="220">
+    </img>
   </div>
-    <p>Master’s degree graduate in Information systems with computing having a considerable experience of 1.9 years for
-developing web applications from scratch both client & server-side (full stack development) with a strong understanding
-of Web services, Object Oriented programing, SEO and UI/UX principles.</p>
+    <p>
+        Master’s degree graduate in Information systems with computing having a considerable experience of 1.9
+        years for developing web applications from scratch both client & server-side (full stack development) 
+        with a strong understanding of Web services, Object Oriented programing, SEO and UI/UX principles.
+    </p>
     <h3>TECHNICAL SKILLS</h3>
     <div class="box" style="height:60px;">JavaScript ES6</div><br>
-    <div class="box" style="height:60px;">Reactj</div><br>
+    <div class="box" style="height:60px;">React.js</div><br>
     <div class="box" style="height:60px;">Node.js(Express)</div><br>
        <div class="box" style="height:60px;">User interface (UI)</div>
   </div>
   <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="box" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>Project 1 - Movie Ticking Web Application</h4> </h2>
+    
+    <div class="box" style="height:480px;">
+        <img 
+        src="https://res.cloudinary.com/harsh-pandloskar/image/upload/v1602550975/proejct_1_gxrkyr.png"
+        alt="Not found">
+     </img>
+    </div>
+    <p><b>Stack - </b>JavaScript/jQuery, PHP, MySQL, REST API and OAuth Authentication</p>
+    <p> 
+        A ‘Movie ticketing’ web application where in a user can simply book a ticket
+        for a movie and can login to the web site using a Facebook account. A dummy movie data 
+        base server is used as a source offetching the data and rendering it to the front-end 
+        pag of the web site.
+    </p>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="box" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>Project 2 - The Random Beer Application</h2>
+    <div class="box" style="height:480px;">
+        <img 
+         src="https://res.cloudinary.com/harsh-pandloskar/image/upload/v1602552398/project_2_jzb9do.png"
+         alt="Not found">
+        </img>
+    </div>
+    <p><b>Stack - </b>React(react-router, react-axios), ES6, HTML, CSS, BreweryDB API</p>
+    <p>
+        This is a personal Reactjs project having multiple screens and uses BreweryDB Restful API,
+        which shows random beers and breweries by country.
+    </p>
   </div>
 </div>
 
